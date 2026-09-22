@@ -1,0 +1,191 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Student Profile & Course Portal</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Student Portal</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+                <li><a href="Grades.html">Grades</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+    </header>
+
+
+    <main>
+
+        <h2>Feedback Form</h2>
+
+        <form>
+
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text"
+                   placeholder="Username"
+                   id="name"
+                   name="name"
+                   required>
+
+            <br><br>
+
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email"
+                   placeholder="Email ID"
+                   id="email"
+                   name="email"
+                   required>
+
+            <br><br>
+
+
+            <!-- Phone -->
+            <label for="phone">Phone:</label>
+            <input type="number"
+                   placeholder="Phone number"
+                   id="phone"
+                   name="phone">
+
+            <br><br>
+
+
+            <!-- Feedback -->
+            <label for="feedback">Feedback:</label>
+            <br>
+
+            <textarea id="feedback"
+                      name="feedback"
+                      rows="6"
+                      cols="40"
+                      placeholder="Please enter your feedback here"
+                      required></textarea>
+
+            <br><br>
+
+
+            <!-- Gender -->
+            <label>Gender:</label>
+            <br>
+
+            <label for="male">Male</label>
+            <input type="radio"
+                   id="male"
+                   name="gender"
+                   value="male">
+
+            <label for="female">Female</label>
+            <input type="radio"
+                   id="female"
+                   name="gender"
+                   value="female">
+
+            <label for="other">Other</label>
+            <input type="radio"
+                   id="other"
+                   name="gender"
+                   value="other">
+
+            <br><br>
+
+
+            <!-- Newsletter -->
+            <input type="checkbox"
+                   id="newsletter"
+                   name="newsletter"
+                   value="yes">
+
+            <label for="newsletter">
+                Subscribe to newsletter and updates
+            </label>
+
+            <br><br>
+
+
+            <!-- Course Topics -->
+            <label>
+                <b>Select Course Topics:</b>
+            </label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="html"
+                   name="topics"
+                   value="html">
+
+            <label for="html">HTML</label>
+
+
+            <input type="checkbox"
+                   id="css"
+                   name="topics"
+                   value="css">
+
+            <label for="css">CSS</label>
+
+
+            <input type="checkbox"
+                   id="javascript"
+                   name="topics"
+                   value="javascript">
+
+            <label for="javascript">JavaScript</label>
+
+            <br><br>
+
+
+            <!-- Portal Rating -->
+            <label for="rating">
+                <b>Rate the Portal:</b>
+            </label>
+
+            <select id="rating" name="rating">
+                <option value="">Select Rating</option>
+                <option value="5">Excellent</option>
+                <option value="4">Very Good</option>
+                <option value="3">Good</option>
+                <option value="2">Average</option>
+                <option value="1">Poor</option>
+            </select>
+
+            <br><br>
+
+
+            <!-- Buttons -->
+            <button type="submit">Submit</button>
+
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </main>
+
+
+    <hr>
+
+    <footer>
+        <p>© 2026 Student Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
